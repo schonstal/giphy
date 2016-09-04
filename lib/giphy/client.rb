@@ -13,14 +13,6 @@ module Giphy
       get('/search', options_hash)
     end
 
-    def flag(id)
-      post("/#{id}/flagged")
-    end
-
-    def flagged
-      get('/flagged')
-    end
-
     def screensaver(tag)
       get('/screensaver', tag: tag)
     end
